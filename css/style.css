@@ -85,28 +85,25 @@ h1{
 
 img{
     margin-top: 25px;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #secondp{
     padding-left: 30px;
     padding-top: 7px;
+    text-align: center;
 }
 
 h2{
-    padding-right: 900px;
+    padding-left: 25px;
     padding-top: 25px;
     font-size: 35px;
     
 }
 
 
-
-main{
-    background-color: lightgray;
-   
-    text-align: center;
-}
 
 
 footer{
@@ -116,4 +113,35 @@ footer{
     padding-left: 10px;
     height: 28px;
     padding-bottom: auto;
+}
+
+
+
+ol {
+  padding-left: 50px;
+  list-style-type: decimal;
+  padding-bottom: 25px;
+
+}
+
+li{
+  padding-bottom: 5px;
+}
+
+
+h3{
+
+  padding-bottom: 20px;
+  padding-left: 15px;
+  font-size: 30px;
+  
+
+}
+
+ul{
+
+  padding-left: 35px;
+  list-style: inside;
+  padding-bottom: 25px;
+
 }

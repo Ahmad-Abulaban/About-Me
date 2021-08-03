@@ -37,6 +37,7 @@ if(play === 'yes' || play === 'y'){
     console.log('False');
 }
 
+let point = 0;
 let myAge = prompt('Do you think I am 21 years old ?');
 myAge = myAge.toLowerCase();
 if(myAge === 'yes' || myAge === 'y'){
@@ -45,6 +46,8 @@ if(myAge === 'yes' || myAge === 'y'){
 } else if(myAge === 'no' || myAge === 'n'){
     alert('True');
     console.log('True');
+    point++;
+
 }
 
 let Length = prompt('Do you think my height is 180cm ?');
@@ -52,6 +55,8 @@ Length = Length.toLowerCase();
 if(Length === 'no' || Length === 'n'){
     alert('True');
     console.log('True');
+    point++;
+
 } else if(Length === 'yes' || Length === 'y'){
     alert('False');
     console.log('False');
@@ -65,6 +70,7 @@ if(education === 'yes' || education === 'y'){
 } else if(education === 'no' || education === 'n'){
     alert('True');
     console.log('True');
+    point++;
 }
 
 let Car = prompt('Do you think my favorite type of car is Honda Civic');
@@ -72,6 +78,7 @@ Car = Car.toLowerCase();
 if(Car === 'yes' || Car === 'y'){
     alert('True');
     console.log('True');
+    point++;
 } else if(Car === 'no' || Car === 'n'){
     alert('False');
     console.log('False');
@@ -82,7 +89,62 @@ food = food.toLowerCase();
 if(food === 'yes' || food === 'y'){
     alert('True');
     console.log('True');
+    point++;
 } else if(food === 'no' || food === 'n'){
     alert('False');
     console.log('False');
 }
+
+
+
+let Age1 = Number(prompt('guess how old I am ?, you have 4 attempts'));
+
+for (let i = 1; i <= 4; i++) {
+
+    if (Age1 <= 19) {
+        alert('that\'s too LOW try again');
+        Age1 = Number(prompt('guess how old I am ?, Attempt Number ' + i ));
+    }
+    else if (Age1 >= 21) {
+        alert('that\'s too HIGH try again');
+        Age1 = Number(prompt('guess how old I am ?, Attempt Number ' + i ));
+
+    }
+    else if (Age1 === 20) {
+        alert('that\'s right');
+        point++;
+        break;
+    }
+    if (i === 4) {
+        alert('your attemps are finished my age is 20 yeas!');
+    }
+}
+
+
+let userFavFruit = ['apple','Kiwi', 'strawberry', 'orange','Grape' ,'grape','Pear', 'Banana'];
+
+for (let i = 0; i < 6; i++) {
+    let userAnsw = prompt('Can you guess my favorite fruit?, you have 6 attempts');
+    let guess = userAnsw.toLowerCase();
+
+    for (let j = 0; j < userFavFruit.length; j++) {
+        if (guess === userFavFruit[j]) {
+            alert('Got it right!, the correct answer is (apple , Kiwi , strawberry, orange , Grape , grape , Pear , Banana)');
+            point++;
+            i = 6;
+            break;
+        }
+    }
+    if (i !== 6) {
+        alert('Sorry wrong answer, try again');
+    }
+
+    console.log(userAnsw);
+
+}
+
+
+
+
+
+alert(name + ', your score is ' + point+ ' / 7' + '\n Good job');
