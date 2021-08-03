@@ -5,9 +5,9 @@ alert("Hello");
 
 alert("Wlecome to my Website");
 
-let name = prompt("what is your name")
+let name = prompt("what is your name");
 while(name == null || name == ""){
-    name = prompt("what is your name ? , please Enter your name")
+    name = prompt("what is your name ? , please Enter your name");
   }
 
 alert("Nice to meet you " + name)
