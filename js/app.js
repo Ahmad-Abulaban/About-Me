@@ -38,16 +38,16 @@ if(play === 'yes' || play === 'y'){
     console.log('False');
 }
 
-Q1();
-Q2();
-Q3();
-Q4();
-Q5();
-Q6();
-Q7();
+q1();
+q2();
+q3();
+q4();
+q5();
+q6();
+q7();
 
 let point = 0;
-function Q1(){
+function q1(){
     let myAge = prompt('Do you think I am 21 years old ?');
     myAge = myAge.toLowerCase();
     if(myAge === 'yes' || myAge === 'y'){
@@ -61,7 +61,7 @@ function Q1(){
     }
 }
 
-function Q2(){
+function q2(){
     let Length = prompt('Do you think my height is 180cm ?');
     Length = Length.toLowerCase();
     if(Length === 'no' || Length === 'n'){
@@ -75,7 +75,7 @@ function Q2(){
     }
 }
 
-function Q3(){
+function q3(){
     let education = prompt('Do you think I have a bachelor\'s degree?');
     education = education.toLowerCase();
     if(education === 'yes' || education === 'y'){
@@ -88,7 +88,7 @@ function Q3(){
     }
 }
 
-function Q4(){
+function q4(){
     let Car = prompt('Do you think my favorite type of car is Honda Civic');
     Car = Car.toLowerCase();
     if(Car === 'yes' || Car === 'y'){
@@ -101,7 +101,7 @@ function Q4(){
     }
 }
 
-function Q5(){
+function q5(){
     let food = prompt('Do you think my favorite food is kabsa?');
     food = food.toLowerCase();
     if(food === 'yes' || food === 'y'){
@@ -115,7 +115,7 @@ function Q5(){
 }
 
 
-function Q6(){
+function q6(){
     let Age1 = Number(prompt('guess how old I am ?, you have 4 attempts'));
 
     for (let i = 1; i <= 4; i++) {
@@ -141,7 +141,7 @@ function Q6(){
 }
 
 
-function Q7(){
+function q7(){
     let userFavFruit = ['apple','Kiwi', 'strawberry', 'orange','Grape' ,'grape','Pear', 'Banana'];
 
     for (let i = 0; i < 6; i++) {
