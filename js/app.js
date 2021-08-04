@@ -147,4 +147,4 @@ for (let i = 0; i < 6; i++) {
 
 
 
-alert(name + ', your score is ' + point+ ' / 7' + '\n Good job');
+alert(name + ', your score is ' + point + ' / 7' + '\n Good job');
